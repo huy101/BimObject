@@ -15,7 +15,7 @@ export const Section: React.FC<SectionProps> = ({ children, className = '', id, 
     greenLight: 'bg-[#d5e5e0]',
     greenTint: 'bg-[#eff5f3]',
     primary: 'bg-primary text-primary-foreground',
-    Beige: 'bg-[#fdf8f2]',
+    Beige: 'bg-[#f9ead8]',
   };
 
   return (

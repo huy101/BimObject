@@ -2,23 +2,50 @@
 import React from 'react';
 import richSvg from 'vite-plugin-react-rich-svg';
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+    darkMode: ['class'],
+    content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {
-      fontFamily: {
-        base: ['Epilogue', 'Arial', '"Open Sans"', 'sans-serif'],
-      },
-      keyframes: {
-        colorChangeArchitect: {
-          '0%, 36%': { color: '#0c482f' },
-          '38%, 100%': { color: 'transparent' },
-          // You can add other keyframes like 50%, 100% here if needed
-        },
-      },
-      animation: {
-        colorChangeArchitect: 'colorChangeArchitect 11s infinite',
-      },
-    },
+  	extend: {
+  		fontFamily: {
+  			base: [
+  				'Epilogue',
+  				'Arial',
+  				'Open Sans"',
+  				'sans-serif'
+  			]
+  		},
+  		keyframes: {
+  			colorChangeArchitect: {
+  				'0%, 36%': {
+  					color: '#0c482f'
+  				},
+  				'38%, 100%': {
+  					color: 'transparent'
+  				}
+  			},
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			colorChangeArchitect: 'colorChangeArchitect 11s infinite',
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
+  		}
+  	}
   },
   plugins: [],
   extend: {

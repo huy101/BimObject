@@ -6,7 +6,7 @@ import { ArrowRightIcon } from '../components/ui/Svg';
 
 interface BrandCardProps {
   name: string;
-  logo: React.ReactNode;
+  logo: string;
   description?: string;
   url?: string;
 }

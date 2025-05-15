@@ -11,7 +11,7 @@ import SignupPage from './pages/Register';
 
 import './i18n';
 import './index.css';
-
+import ProductDetail from './pages/Product/ProductDetail';
 const App = () => (
   <Router>
     <Switch>
@@ -20,6 +20,7 @@ const App = () => (
       <Route path='/login' component={LoginPage} />
       <Route path='/brand' component={BrandPage} />
       <Route path='/register' component={SignupPage} />
+      <Route path='/product' component={ProductDetail} />
     </Switch>
   </Router>
 );

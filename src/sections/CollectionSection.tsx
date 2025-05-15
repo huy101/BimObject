@@ -16,7 +16,7 @@ interface CollectionSectionProps {
 
 export default function CollectionSection({ collections }: CollectionSectionProps) {
   return (
-    <Section background='greenLight'>
+    <Section background='greenTint'>
       <Container>
         <div className='w-full flex-col'>
           <TitleSection arrowIcon={<ArrowRightIcon />} title='Collections' subTitle='Browse curated content for your project' className='mb-6' icon={<Collections />} />

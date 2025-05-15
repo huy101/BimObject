@@ -1,9 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { Button } from '../../components/ui/Button/index';
-import { Image } from '../../components/ui/Image';
-import { Eye, EyeDown } from '../../components/ui/Svg';
+import { Button } from '@/components/ui/Button';
+import { Input } from '@/components/ui/input';
+import { Eye, EyeOff } from 'lucide-react';
+import { Image } from '@/components/ui/Image';
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
@@ -19,29 +20,18 @@ export default function LoginPage() {
       <div className='flex w-full items-center justify-center lg:w-1/2'>
         <div className='w-full max-w-md px-6'>
           <div className='mb-8 flex justify-center'>
-            <div className='flex h-12 w-12 items-center justify-center rounded-md bg-black text-white'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='24'
-                height='24'
-                viewBox='0 0 24 24'
-                fill='none'
-                stroke='currentColor'
-                strokeWidth='2'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-              >
-                <rect x='3' y='3' width='18' height='18' rx='2' ry='2' />
-                <circle cx='8.5' cy='8.5' r='1.5' />
-                <path d='M20.4 14.5L16 10 4 20' />
+            <div className='flex h-12 w-12 items-center justify-center'>
+              <svg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <rect width='40' height='40' rx='4' fill='#0F2B16' />
+                <path d='M25 20C25 22.7614 22.7614 25 20 25C17.2386 25 15 22.7614 15 20C15 17.2386 17.2386 15 20 15C22.7614 15 25 17.2386 25 20Z' fill='white' />
               </svg>
             </div>
           </div>
 
-          <h1 className='mb-10 text-center text-4xl font-bold'>Welcome back</h1>
+          <h1 className='mb-10 text-center text-4xl font-bold text-black'>Welcome back</h1>
 
           <div className='space-y-4'>
-            <Button variant='white' className='flex w-full items-center justify-center gap-2 border border-gray-300 py-6'>
+            <Button variant='outline' className='flex h-12 w-full items-center justify-center gap-3 rounded-md border border-gray-200 py-3 shadow-sm hover:bg-gray-50'>
               <svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'>
                 <path d='M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z' fill='#4285F4' />
                 <path d='M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z' fill='#34A853' />
@@ -53,14 +43,14 @@ export default function LoginPage() {
             </Button>
 
             <div className='flex gap-4'>
-              <Button variant='white' className='flex w-1/2 items-center justify-center gap-2 border border-gray-300 py-6'>
+              <Button variant='outline' className='flex h-12 w-1/2 items-center justify-center gap-2 rounded-md border border-gray-200 py-3 shadow-sm hover:bg-gray-50'>
                 <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='#0077B5'>
                   <path d='M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z' />
                 </svg>
                 LinkedIn
               </Button>
 
-              <Button variant='white' className='flex w-1/2 items-center justify-center gap-2 border border-gray-300 py-6'>
+              <Button variant='outline' className='flex h-12 w-1/2 items-center justify-center gap-2 rounded-md border border-gray-200 py-3 shadow-sm hover:bg-gray-50'>
                 <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
                   <path d='M12 2L2 7L12 12L22 7L12 2Z' stroke='black' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
                   <path d='M2 17L12 22L22 17' stroke='black' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
@@ -71,48 +61,46 @@ export default function LoginPage() {
             </div>
 
             <div className='relative flex items-center py-2'>
-              <div className='flex-grow border-t border-gray-300'></div>
-              <span className='mx-4 flex-shrink text-gray-600'>or</span>
-              <div className='flex-grow border-t border-gray-300'></div>
+              <div className='flex-grow border-t border-gray-200'></div>
+              <span className='mx-4 flex-shrink text-sm text-gray-500'>or</span>
+              <div className='flex-grow border-t border-gray-200'></div>
             </div>
 
             <div className='space-y-4'>
               <div>
-                <input
+                <Input
                   type='email'
                   placeholder='Email'
-                  className='w-full rounded-md border border-gray-300 px-4 py-3 focus:border-green-500 focus:outline-none'
+                  className='h-12 rounded-md border-gray-200 px-4 py-3 focus:border-gray-300 focus:ring-0'
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
 
               <div className='relative'>
-                <input
+                <Input
                   type={showPassword ? 'text' : 'password'}
                   placeholder='Password'
-                  className='w-full rounded-md border border-gray-300 px-4 py-3 focus:border-green-500 focus:outline-none'
+                  className='h-12 rounded-md border-gray-200 px-4 py-3 focus:border-gray-300 focus:ring-0'
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
-                <button type='button' onClick={togglePasswordVisibility} className='absolute right-3 top-1/2 -translate-y-1/2 text-gray-500'>
-                  {showPassword ? <Eye /> : <EyeDown />}
-                </button>
+                <Button type='button' onClick={togglePasswordVisibility} className='absolute right-2 top-1/2 h-8 w-8 -translate-y-1/2 text-gray-400'>
+                  {showPassword ? <EyeOff className='h-4 w-4' /> : <Eye className='h-4 w-4' />}
+                </Button>
               </div>
 
               <div className='text-right'>
-                <a href='#' className='text-sm text-gray-700 hover:text-green-600'>
+                <a href='#' className='text-sm text-gray-700 hover:text-gray-900'>
                   Forgot your password?
                 </a>
               </div>
 
-              <Button size='sm' rounded='xl' className='w-full bg-green-600 py-6 text-white hover:bg-green-700'>
-                Sign in with email
-              </Button>
+              <Button className='h-12 w-full rounded-md bg-[#7EB09B] py-3 font-medium text-white hover:bg-[#6A9A86]'>Sign in with email</Button>
 
               <p className='text-center text-sm text-gray-600'>
                 Don't have an account?{' '}
-                <a href='#' className='font-medium text-green-600 hover:text-green-700'>
+                <a href='#' className='font-medium text-gray-900 hover:underline'>
                   Sign up
                 </a>
               </p>
@@ -124,7 +112,7 @@ export default function LoginPage() {
       {/* Right side - Image */}
       <div className='hidden lg:block lg:w-1/2'>
         <div className='h-full w-full'>
-          <Image src='../../assets/image/cover.BvtZvoW8.png' alt='Modern building architecture' width={1000} height={1000} className='h-full w-full object-cover' />
+          <img src='/src/assets/image/cover.BvtZvoW8.png' alt='Modern building architecture' className='h-full w-full object-cover' />
         </div>
       </div>
     </div>

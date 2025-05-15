@@ -67,12 +67,12 @@ export const MenuMobile = ({ isOpen, onClose }: MenuMobileProps) => {
   if (!isVisible && !isOpen) return null;
 
   return (
-    <div className={`fixed inset-0 z-50 bg-black bg-opacity-50 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`}>
       <div
         ref={menuRef}
         className={`fixed right-0 top-0 h-full w-full max-w-sm bg-white p-6 shadow-lg transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <div onClick={onClose} className='absolute right-4 top-4 z-50 rounded-full p-2 hover:bg-gray-100 lg:hidden' aria-label='Close menu'>
+        <div onClick={onClose} className='absolute right-4 top-4 rounded-full p-2 hover:bg-gray-100 lg:hidden' aria-label='Close menu'>
           <div className='bar-toggle-container w-fit'>
             <div className={`bar-toggle-line ${isOpen ? 'bar-rotate-top' : ''}`} />
             <div className={`bar-toggle-line ${isOpen ? 'bar-hidden' : ''}`} />

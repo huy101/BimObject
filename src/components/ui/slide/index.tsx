@@ -8,8 +8,8 @@ function MultipleItems() {
     dots: true,
     infinite: true,
     speed: 1500,
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: 3,
+    slidesToScroll: 3,
   };
 
   return (

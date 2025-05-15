@@ -54,7 +54,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({
 }) => {
   // Generate the link class based on props
   const getLinkClass = () => {
-    return `rounded-${rounded} bg-${backgroundColor} p-${padding} text-${iconColor} transition-colors hover:bg-${hoverBackgroundColor} ${hoverIconColor ? `hover:text-${hoverIconColor}` : ''} ${linkClassName}`;
+    return `rounded-${rounded} bg-${backgroundColor} bg-[${backgroundColor}] p-${padding} text-${iconColor} transition-colors hover:bg-${hoverBackgroundColor} ${hoverIconColor ? `hover:text-${hoverIconColor}` : ''} ${linkClassName}`;
   };
 
   // Determine the component to use for the link

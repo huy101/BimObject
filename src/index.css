@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 :root {
   height: 100%;
   width: 100%;
@@ -64,7 +65,7 @@ button {
   }
 
   .bar-toggle-line {
-    @apply z-50 h-[2px] w-4 bg-black transition-transform duration-300 ease-linear;
+    @apply h-[2px] w-4 bg-black transition-transform duration-300 ease-linear;
   }
 
   .bar-rotate-top {
@@ -74,18 +75,20 @@ button {
   .bar-rotate-bottom {
     transform: translateY(0px) rotate(-45deg);
   }
+  .chevron-rotate {
+    transform: rotate(180deg);
+  }
 
   .bar-hidden {
     opacity: 0;
   }
+
   .software {
-    @apply gap-0 bg-[#f6f6f6] py-0 text-[10px] font-semibold text-[#484848] md:text-sm;
+    @apply absolute left-[-44px] top-[52px] mt-2 flex h-7 w-7 items-center justify-between gap-0 bg-[#f6f6f6] py-0 pt-2 text-[10px] font-semibold text-[#484848] md:static md:w-full md:p-0 md:text-sm;
   }
-  .software-moblie {
-    @apply absolute bottom-0 mt-2 flex h-7 w-7 items-center justify-between pt-2 text-[10px] font-semibold text-[#484848] md:hidden md:text-sm;
-  }
+
   .container {
-    @apply flex max-w-[1440px] flex-wrap overflow-auto p-4 sm:mx-auto sm:w-full md:mx-auto md:flex-nowrap lg:mx-auto lg:w-full xl:mx-auto xl:flex-nowrap;
+    @apply relative flex max-w-[1440px] flex-wrap overflow-auto p-4 sm:mx-auto sm:w-full md:mx-auto md:flex-nowrap lg:mx-auto lg:w-full xl:mx-auto xl:flex-nowrap;
   }
 
   .sliderContainer {
@@ -136,7 +139,13 @@ button {
     @apply hidden font-semibold md:block;
   }
   .slideContainer {
-    @apply mx-auto w-full px-6;
+    @apply mx-auto flex w-full items-center gap-2 px-10;
+  }
+  .slideContainer .slick-slider {
+    @apply w-full;
+  }
+  .slick-list {
+    @apply flex w-full max-w-[1634px] items-start px-4 py-2;
   }
 }
 .slick-track {
@@ -150,10 +159,21 @@ button {
   animation-delay: 0s;
 }
 .delay-1 {
-  animation-delay: 3s;
+  animation-delay: 4s;
 } /* 11s / 3 = ~3.66s */
 .delay-2 {
-  animation-delay: 7s;
+  animation-delay: 8s;
+}
+.slick-list {
+  width: 100%;
+  padding: 16px 8px;
+  max-width: 1634px;
+  display: flex;
+  align-items: flex-start;
+}
+.slick-track {
+  display: flex;
+  width: 100%;
 }
 h1 {
   text-align: left;

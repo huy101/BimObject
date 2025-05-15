@@ -9,15 +9,25 @@ import Dimension from '../../../assets/image/3d.svg?react';
 import Category from '../../../assets/image/category-icon.svg?react';
 import Star from '../../../assets/image/star-filled.svg?react';
 import BIMobject from '../../../assets/image/BIMobject-logo-black.svg?react';
+import BIMobjectWhite from '../../../assets/image/BIMobject-logo-white.svg?react';
 import BIMobjectMobile from '../../../assets/image/logo-b-black-background.svg?react';
 import ChevronUp from '../../../assets/image/chevron-up-solid.svg?react';
 import Collections from '../../../assets/image/collections-white.svg?react';
 import Magnifying from '../../../assets/image/magnifying-white-glass-solid.svg?react';
 import ChevronRight from '../../../assets/image/chevron-right-solid.svg?react';
 import Globe from '../../../assets/image/globe-solid.svg?react';
+import Dowwnload from '../../../assets/image/download.svg?react';
+import Preferences from '../../../assets/image/preferences.svg?react';
+import AvatarProfile from '../../../assets/image/avatar-profile.svg?react';
+import Signout from '../../../assets/image/signout.svg?react';
 import Configure from '../../../assets/image/configure-icon.svg?react';
 export {
+  Preferences,
+  AvatarProfile,
+  Dowwnload,
+  Signout,
   BIMobjectMobile,
+  BIMobjectWhite,
   Globe,
   Collections,
   ChevronDown,
