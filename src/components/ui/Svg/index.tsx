@@ -21,7 +21,9 @@ import Preferences from '../../../assets/image/preferences.svg?react';
 import AvatarProfile from '../../../assets/image/avatar-profile.svg?react';
 import Signout from '../../../assets/image/signout.svg?react';
 import Configure from '../../../assets/image/configure-icon.svg?react';
+import ProjectGreen from '../../../assets/image/project-green.svg?react';
 export {
+  ProjectGreen,
   Preferences,
   AvatarProfile,
   Dowwnload,

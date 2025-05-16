@@ -19,8 +19,8 @@ export const BrandsSection: React.FC<BrandsSectionProps> = ({ brands }) => {
   return (
     <Section background='Beige'>
       <Container>
-        <div className='h-full w-full flex-col'>
-          <TitleSection arrowIcon={<ArrowRightIcon />} title='Brands' subTitle='Browse all building product brands' className='mb-6' />
+        <div className='h-full w-full flex-col overflow-auto'>
+          <TitleSection arrowIcon={<ArrowRightIcon />} title='Brands' subTitle='Browse all building product brands' className='' />
           <div className='productList'>
             {brands.map((brand, i) => (
               <BrandCard key={i} name={brand.name} logo={brand.logo} description={brand.description} url={brand.url} />

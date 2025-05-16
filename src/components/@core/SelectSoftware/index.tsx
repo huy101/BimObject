@@ -87,27 +87,31 @@ export function SelectSoftware() {
 
   return (
     <Popover open={isOpen} onOpenChange={setIsOpen}>
-      <PopoverTrigger className='software flex items-center'>
-        Software
+      <PopoverTrigger className='absolute left-[-44px] top-[52px] mt-2 flex h-7 w-7 items-center justify-between gap-0 bg-[#f6f6f6] py-0 pt-2 text-[10px] font-semibold text-[#484848] md:static md:w-full md:p-0 md:text-sm'>
+        {softwareOptions.find((s) => s.id === selectedSoftware)?.name || 'Software'}
         <ChevronDown width={20} height={20} className={`ml-[6px] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
       </PopoverTrigger>
 
-      <PopoverContent className='w-[305px] p-4'>
+      <PopoverContent className='shadow-[0 0 10px #0003] max-h-[355px] max-w-[305px] bg-white p-4'>
         <div className='space-y-6'>
           <div className='grid grid-cols-2 gap-3'>
-            {softwareOptions.map((software) => (
-              <button
-                key={software.id}
-                type='button'
-                onClick={() => setSelectedSoftware(software.id)}
-                className={`flex items-center gap-2 rounded-full border px-4 py-2 transition-colors ${
-                  selectedSoftware === software.id ? 'border-teal-700 bg-teal-50 text-teal-700' : 'border-gray-200 bg-white hover:border-gray-300'
-                }`}
-              >
-                {software.icon}
-                <span className='font-medium'>{software.name}</span>
-              </button>
-            ))}
+            {softwareOptions.map((software) => {
+              const isSelected = selectedSoftware === software.id;
+
+              return (
+                <button
+                  key={software.id}
+                  type='button'
+                  onClick={() => setSelectedSoftware(isSelected ? '' : software.id)}
+                  className={`flex items-center gap-2 rounded-full border px-4 py-2 transition-colors ${
+                    isSelected ? 'border-teal-700 bg-teal-50 text-teal-700' : 'border-gray-200 bg-white text-black hover:border-gray-300'
+                  }`}
+                >
+                  {software.icon}
+                  <span className='font-medium'>{software.name}</span>
+                </button>
+              );
+            })}
           </div>
 
           <div className='border-t border-gray-200 pt-4'>

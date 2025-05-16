@@ -34,11 +34,19 @@ function Navbar() {
       {/* Main navbar - sticky */}
       <header className='sticky top-0 z-[1] h-auto w-full border-b border-solid border-[#eee] bg-white'>
         <div className='mx-2 flex max-w-[1440px] items-center justify-between gap-3 p-4 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-auto'>
+          <Link to='/'>
+            <BIMobject className='relative hidden h-6 w-36 lg:block' />
+          </Link>
           {/* <Image src='../../assets/image/BIMobject-logo-black.svg' className='relative hidden h-6 w-36 lg:block' /> */}
-          <BIMobject className='relative hidden h-6 w-36 lg:block' />
           {/* Logo cho màn hình nhỏ */}
           <div className='block h-6 w-6 lg:hidden'>
-            <BIMobjectMobile />
+            {' '}
+            <Link
+              to='/
+            '
+            >
+              <BIMobjectMobile />{' '}
+            </Link>
           </div>
           {/* <Image src='../../assets/image/logo-b-black-background.svg'/> */}
           {/* Search bar */}
@@ -71,7 +79,7 @@ function Navbar() {
           </div>
           <MenuMobile isOpen={isOpen} onClose={() => setIsOpen(false)} />
           {/* Buttons */}
-          <div className='signin-login-container'>
+          <div className='relative hidden gap-2 lg:flex'>
             <Link to='/login'>
               <Button variant='white' className='login'>
                 Login

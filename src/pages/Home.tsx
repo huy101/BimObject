@@ -39,6 +39,42 @@ export default function Home() {
       description: 'Leading sports brand with high-quality shoes and apparel.',
       url: 'https://www.nike.com',
     },
+    {
+      name: 'Nike',
+      logo: 'src/assets/image/858a5779-5744-4e52-8e68-877977e6d894.webp',
+      description: 'Leading sports brand with high-quality shoes and apparel.',
+      url: 'https://www.nike.com',
+    },
+    {
+      name: 'Nike',
+      logo: 'src/assets/image/858a5779-5744-4e52-8e68-877977e6d894.webp',
+      description: 'Leading sports brand with high-quality shoes and apparel.',
+      url: 'https://www.nike.com',
+    },
+    {
+      name: 'Nike',
+      logo: 'src/assets/image/858a5779-5744-4e52-8e68-877977e6d894.webp',
+      description: 'Leading sports brand with high-quality shoes and apparel.',
+      url: 'https://www.nike.com',
+    },
+    {
+      name: 'Nike',
+      logo: 'src/assets/image/858a5779-5744-4e52-8e68-877977e6d894.webp',
+      description: 'Leading sports brand with high-quality shoes and apparel.',
+      url: 'https://www.nike.com',
+    },
+    {
+      name: 'Nike',
+      logo: 'src/assets/image/858a5779-5744-4e52-8e68-877977e6d894.webp',
+      description: 'Leading sports brand with high-quality shoes and apparel.',
+      url: 'https://www.nike.com',
+    },
+    {
+      name: 'Nike',
+      logo: 'src/assets/image/858a5779-5744-4e52-8e68-877977e6d894.webp',
+      description: 'Leading sports brand with high-quality shoes and apparel.',
+      url: 'https://www.nike.com',
+    },
 
     {
       name: 'Nike',
@@ -55,7 +91,6 @@ export default function Home() {
       brand: 'huy',
       name: 'Wooden Chaiac aljcalcsj r',
       image: 'src/assets/image/689463.png',
-      rating: 4.3,
       url: '/product/wooden-chair',
       onAddToCart: () => console.log('Added to cart'),
     },
@@ -73,6 +108,41 @@ export default function Home() {
       brand: 'huy',
       name: 'Wooden Chaiac aljcalcsj r',
       image: 'src/assets/image/356614.png',
+      url: '/product/wooden-chair',
+      onAddToCart: () => console.log('Added to cart'),
+    },
+    {
+      id: '4',
+      brand: 'huy',
+      name: 'Wooden Chaiac aljcalcsj r',
+      image: 'src/assets/image/525994.png',
+      rating: 4.3,
+      url: '/product/wooden-chair',
+      onAddToCart: () => console.log('Added to cart'),
+    },
+    {
+      id: '4',
+      brand: 'huy',
+      name: 'Wooden Chaiac aljcalcsj r',
+      image: 'src/assets/image/525994.png',
+      rating: 4.3,
+      url: '/product/wooden-chair',
+      onAddToCart: () => console.log('Added to cart'),
+    },
+    {
+      id: '4',
+      brand: 'huy',
+      name: 'Wooden Chaiac aljcalcsj r',
+      image: 'src/assets/image/525994.png',
+      rating: 4.3,
+      url: '/product/wooden-chair',
+      onAddToCart: () => console.log('Added to cart'),
+    },
+    {
+      id: '4',
+      brand: 'huy',
+      name: 'Wooden Chaiac aljcalcsj r',
+      image: 'src/assets/image/525994.png',
       rating: 4.3,
       url: '/product/wooden-chair',
       onAddToCart: () => console.log('Added to cart'),
@@ -137,6 +207,8 @@ export default function Home() {
       {/* <BrandCardList cards={sampleCards} />; */}
       <TrendingProductsSection products={products} />
       <CollectionSection collections={collections} />
+      <TrendingProductsSection products={products} />
+
       <AdditionalContentSection />
       <GoodCompanySection />
       <Footer />
@@ -148,14 +220,14 @@ export default function Home() {
               <div className='grid grid-cols-2 gap-1'>
                 <div className='col-span-2'>
                   <div className='relative h-[200px] bg-[#f9f9f9]'>
-                    <img src='/placeholder.svg?height=200&width=400' alt='Plant stand with potted plants' fill className='object-contain p-4' />
+                    <img src='/placeholder.svg?height=200&width=400' alt='Plant stand with potted plants' className='object-contain p-4' />
                   </div>
                 </div>
                 <div className='relative h-[100px] bg-[#f9f9f9]'>
-                  <img src='/placeholder.svg?height=100&width=200' alt='Black pendant lamp' fill className='object-contain p-2' />
+                  <img src='/placeholder.svg?height=100&width=200' alt='Black pendant lamp' className='object-contain p-2' />
                 </div>
                 <div className='relative h-[100px] bg-[#f9f9f9]'>
-                  <img src='/placeholder.svg?height=100&width=200' alt='Wooden bed frame' fill className='object-contain p-2' />
+                  <img src='/placeholder.svg?height=100&width=200' alt='Wooden bed frame' className='object-contain p-2' />
                 </div>
               </div>
             </div>

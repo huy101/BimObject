@@ -17,10 +17,10 @@ export default function HeroSection() {
             </div>
           </div>
           <div className='flex w-[48%] max-w-[536px] flex-col items-start justify-center'>
-            <h1>
+            <h1 className='pb-[20px] text-[#1a4b3b]'>
               BIM objects for <br /> everyone.
             </h1>
-            <p>We provide you with the information and inspiration you need to design buildings faster, smarter and greener.</p>
+            <p className='pb-8'>We provide you with the information and inspiration you need to design buildings faster, smarter and greener.</p>
             <Button className='w-full' size='lg'>
               Free sign up
             </Button>

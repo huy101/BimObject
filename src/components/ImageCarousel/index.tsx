@@ -62,57 +62,39 @@ export default function ProductCarousel({ images = [], title, specifications, fe
           <CarouselContent>
             {images.map((image, index) => (
               <CarouselItem key={index}>
-                <div className='p-1'>
-                  <Card className='border-none'>
-                    <CardContent className='flex aspect-[4/3] items-center justify-center p-0'>
-                      <div className='relative h-full w-full'>
-                        <img src={image.src || '/placeholder.svg'} alt={image.alt} fill className='object-contain' priority={index === 0} />
-                        {image.has3DView && (
-                          <Button variant='outline' size='sm' className='absolute bottom-4 right-4 bg-white/80 hover:bg-white' onClick={() => setIs3DViewActive(!is3DViewActive)}>
-                            <Maximize className='mr-2 h-4 w-4' />
-                            3D View
-                          </Button>
-                        )}
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
+                <Card className='border-none'>
+                  <CardContent className='flex aspect-[4/3] items-center justify-center p-0'>
+                    <div className='relative h-full w-full'>
+                      <img src={image.src || '/placeholder.svg'} alt={image.alt} fill className='object-contain' priority={index === 0} />
+                    </div>
+                  </CardContent>
+                </Card>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className='left-2 bg-white/80 hover:bg-white' />
-          <CarouselNext className='right-2 bg-white/80 hover:bg-white' />
+          <Button variant='outline' size='sm' className='absolute bottom-4 right-4 bg-white/80 hover:bg-white' onClick={() => setIs3DViewActive(!is3DViewActive)}>
+            <Maximize className='mr-2 h-4 w-4' />
+            3D View
+          </Button>
+          <CarouselPrevious />
+          <CarouselNext />
         </Carousel>
-
-        <div className='flex items-center justify-center gap-2 py-4'>
-          {Array.from({ length: count }).map((_, index) => (
-            <Button
-              key={index}
-              className={cn('h-2 w-2 rounded-full p-0', current === index ? 'bg-black' : 'bg-gray-300')}
-              onClick={() => api?.scrollTo(index)}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
-
-        <div className='flex items-center justify-between border-t px-4 py-2'>
-          <div className='flex items-center gap-2'>
-            <Button variant='outline' size='sm' className='text-xs' onClick={() => api?.scrollPrev()}>
-              <ChevronLeft className='mr-1 h-4 w-4' />
-              Previous
-            </Button>
-            <Button variant='outline' size='sm' className='text-xs' onClick={() => api?.scrollNext()}>
-              Next
-              <ChevronRight className='ml-1 h-4 w-4' />
-            </Button>
-          </div>
-          <div className='text-sm text-gray-500'>
-            {current + 1} / {count}
-          </div>
-        </div>
+      </div>
+      <div className='flex items-center justify-center gap-2 py-4'>
+        {Array.from({ length: count }).map((_, index) => (
+          <Button
+            size='none'
+            font='normal'
+            rounded='full'
+            key={index}
+            className={cn('h-4 w-4 p-0', current === index ? 'bg-black' : 'bg-gray-300')}
+            onClick={() => api?.scrollTo(index)}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
       </div>
 
-      {(title || specifications || features) && (
+      {/* {(title || specifications || features) && (
         <div className='mt-6 rounded-lg bg-white p-4 shadow-md'>
           {title && <h2 className='mb-2 text-xl font-semibold'>{title}</h2>}
           <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
@@ -141,7 +123,7 @@ export default function ProductCarousel({ images = [], title, specifications, fe
             )}
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

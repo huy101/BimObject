@@ -30,8 +30,7 @@ export const CollectionCard: React.FC<CollectionCardProps> = ({ images, title, u
             <Image src={images[2]} alt='Image 3' className='aspect-square' />
           </div>
         </div>
-
-        <div className='absolute bottom-2 right-2 flex gap-1 rounded-[12px] border-2 border-white bg-[#f7f7f7] px-[6px] py-[2px]'>
+        <div className='absolute bottom-[100px] right-[-100px] flex items-center gap-1 rounded-[12px] border-2 border-white bg-[#f7f7f7] px-[6px] py-[2px]'>
           <Configure height={24} />
           <span className='text-black'>36</span>
         </div>

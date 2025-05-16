@@ -18,9 +18,9 @@ export default function CollectionSection({ collections }: CollectionSectionProp
   return (
     <Section background='greenTint'>
       <Container>
-        <div className='w-full flex-col'>
-          <TitleSection arrowIcon={<ArrowRightIcon />} title='Collections' subTitle='Browse curated content for your project' className='mb-6' icon={<Collections />} />
-          <div className='flex justify-between gap-4'>
+        <div className='w-full flex-col p-0'>
+          <TitleSection arrowIcon={<ArrowRightIcon />} title='Collections' subTitle='Browse curated content for your project' icon={<Collections />} />
+          <div className='flex justify-between gap-4 p-4'>
             {collections.map((collection, index) => (
               <CollectionCard
                 key={index}

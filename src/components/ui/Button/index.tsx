@@ -1,7 +1,7 @@
 import type React from 'react';
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'white' | 'follow' | 'greenLight' | 'outline';
-  size?: 'sm' | 'md' | 'lg';
+  size?: 'sm' | 'md' | 'lg' | 'none' | 'follow';
   font?: 'normal' | 'medium' | 'semibold' | 'bold';
   fullWidth?: boolean;
   as?: 'button' | 'a';
@@ -38,7 +38,7 @@ export const Button: React.FC<ButtonProps> = ({
 
   const variantStyles = {
     primary: 'bg-[#0c482f] text-white  ',
-    secondary: 'bg-gray-200 text-gray-900 hover:',
+    secondary: 'bg-gray-200 text-gray-900 ',
     white: 'bg-white border border-black hover:bg-gray-100',
     outline: 'bg-transparent',
     follow: 'follow',
@@ -53,9 +53,11 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   const sizeStyles = {
-    sm: ' px-4 ',
+    sm: ' px-2 ',
     md: ' px-4 py-2',
     lg: ' px-8 py-3',
+    none: 'p-0',
+    follow: 'px-2 py-[2px]',
   };
 
   const widthStyles = fullWidth ? 'w-full' : '';

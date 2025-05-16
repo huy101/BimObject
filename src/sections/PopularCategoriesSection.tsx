@@ -10,7 +10,7 @@ export default function PopularCategoriesSection() {
     <Section background='gray'>
       <Container>
         <div className='w-full flex-col'>
-          <TitleSection icon={<Category />} arrowIcon={<ArrowRightIcon />} title='Popular categories' subTitle='Browse all building product categories' className='mb-6' />
+          <TitleSection icon={<Category />} arrowIcon={<ArrowRightIcon />} title='Popular categories' subTitle='Browse all building product categories' />
           <MultipleItems />
         </div>
       </Container>
