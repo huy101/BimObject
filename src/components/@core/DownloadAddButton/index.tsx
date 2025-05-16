@@ -14,10 +14,10 @@ type ActionButtonsProps = {
 const ActionButtons: React.FC<ActionButtonsProps> = ({ onDownload, onAddProject, className, classNameDownload, classNameAddProject }) => {
   return (
     <div className={cn('flex gap-4', className)}>
-      <Button className={cn('flex-[1_1_0%] rounded-[3px] bg-[#eff5f3]', classNameDownload)} size='sm' onClick={onAddProject}>
-        <ProjectGreen width={24} height={24} className='mx-auto' />
+      <Button className={cn('h-9 max-w-9 flex-[1_1_0%] rounded-[3px] bg-[#eff5f3]', classNameDownload)} size='project' onClick={onAddProject}>
+        <ProjectGreen width={24} height={24} className='p-0' />
       </Button>
-      <Button variant='greenLight' className={cn('h-full flex-[9_9_0%]', classNameAddProject)} rounded='sm' size='md' onClick={onDownload}>
+      <Button variant='greenLight' className={cn('h-9 w-fit flex-[9_9_0%]', classNameAddProject)} rounded='sm' size='lg' onClick={onDownload}>
         Download
       </Button>
     </div>

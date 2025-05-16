@@ -2,7 +2,7 @@
 import { Image } from '../components/ui/Image';
 import { TitleSection } from '../components/@core/TitleSectionProps';
 import { Container } from '../components/@core/container';
-import { Section } from '../components/@core/section';
+import { Section } from '../components/@core/Section';
 export default function AdditionalContentSection() {
   return (
     <Section background='Beige'>

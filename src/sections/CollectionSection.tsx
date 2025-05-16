@@ -2,7 +2,7 @@ import { CollectionCard } from '../components/@core/Colection';
 import { ArrowRightIcon, Collections } from '../components/ui/Svg';
 import { TitleSection } from '../components/@core/TitleSectionProps';
 import { Container } from '../components/@core/container';
-import { Section } from '../components/@core/section';
+import { Section } from '../components/@core/Section';
 
 interface Collection {
   title: string;

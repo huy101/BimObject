@@ -22,7 +22,22 @@ import AvatarProfile from '../../../assets/image/avatar-profile.svg?react';
 import Signout from '../../../assets/image/signout.svg?react';
 import Configure from '../../../assets/image/configure-icon.svg?react';
 import ProjectGreen from '../../../assets/image/project-green.svg?react';
+import RevitIcon from '@/assets/image/revit.svg?react';
+import ArchicadIcon from '@/assets/image/archicad.svg?react';
+import SketchUpIcon from '@/assets/image/sketchup.svg?react';
+import AutoCADIcon from '@/assets/image/autocad.svg?react';
+import Max3dsIcon from '@/assets/image/3dstudiomax.svg?react';
+import MicroStationIcon from '@/assets/image/microstation.svg?react';
+import RhinoIcon from '@/assets/image/rhino.svg?react';
+
 export {
+  RhinoIcon,
+  MicroStationIcon,
+  Max3dsIcon,
+  AutoCADIcon,
+  SketchUpIcon,
+  ArchicadIcon,
+  RevitIcon,
   ProjectGreen,
   Preferences,
   AvatarProfile,

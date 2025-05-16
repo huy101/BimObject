@@ -1,4 +1,4 @@
-import { Section } from '../components/@core/section';
+import { Section } from '../components/@core/Section';
 import { Container } from '../components/@core/container';
 import { TitleSection } from '../components/@core/TitleSectionProps';
 import { BrandCard } from '../components/@core/BrandCard';

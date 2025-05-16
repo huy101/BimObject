@@ -6,7 +6,7 @@ import CollectionSection from '../sections/CollectionSection';
 import GoodCompanySection from '../sections/GoodCompanySection';
 import HeroSection from '../sections/HeroSection';
 import PopularCategoriesSection from '../sections/PopularCategoriesSection';
-import { TrendingProductsSection } from '../sections/TrendingProduct';
+import { TrendingProductsSection } from '../sections/SuggestsProductSection';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card/card';
 import { Download, FolderPlus, Package } from 'lucide-react';

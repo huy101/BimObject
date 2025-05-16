@@ -3,7 +3,7 @@ import MultipleItems from '../components/ui/slide'; // Giả sử bạn đã có
 import { ArrowRightIcon, Category } from '../components/ui/Svg';
 import { TitleSection } from '../components/@core/TitleSectionProps';
 import { Container } from '../components/@core/container';
-import { Section } from '../components/@core/section';
+import { Section } from '../components/@core/Section';
 
 export default function PopularCategoriesSection() {
   return (

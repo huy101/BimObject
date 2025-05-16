@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { Container } from '../components/@core/container';
-import { Section } from '../components/@core/section';
+import { Section } from '../components/@core/Section';
 
 export default function HeroSection() {
   return (

@@ -20,8 +20,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({ name, image, brand, ra
       <div className='relative flex h-full flex-col justify-between'>
         <div className='w-full px-2'>
           <div className='relative min-w-[214px] bg-[#f7f7f7]'>
-            <div className='absolute right-0 top-2 h-7 rounded px-2 py-1 text-xs font-medium text-white'>
-              <Dimension width={24} height={24} />
+            <div className='absolute right-1 top-2 h-[26px] w-[26px] cursor-pointer rounded bg-white px-[2px] hover:bg-[#c3c3c3]'>
+              <Dimension width={24} height={24} className='w-full' />
             </div>
             <Image src={image} alt={name} className='h-full w-full object-contain' />
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section } from '../components/@core/section';
+import { Section } from '../components/@core/Section';
 import { Container } from '../components/@core/container';
 import { TitleSection } from '../components/@core/TitleSectionProps';
 import { ProductCard } from '../components/@core/ProductCard';

@@ -14,7 +14,7 @@ export const CollectionCard: React.FC<CollectionCardProps> = ({ images, title, u
   return (
     <div className='flex flex-col'>
       <div className='shadow-[0 0 12px #0003] flex max-h-[348px] w-full flex-row justify-between rounded-md bg-white'>
-        <div className='flex max-h-[230px] gap-3 bg-white'>
+        <div className='relative flex max-h-[230px] gap-3 bg-white'>
           {/* Cột 2 ảnh nhỏ */}
           <div className='flex h-full w-[110px] flex-col justify-between rounded-md bg-white mix-blend-multiply'>
             <div className='bg-[#f7f7f7]'>
@@ -29,10 +29,10 @@ export const CollectionCard: React.FC<CollectionCardProps> = ({ images, title, u
           <div className='h-full w-[230px] rounded-md object-cover'>
             <Image src={images[2]} alt='Image 3' className='aspect-square' />
           </div>
-        </div>
-        <div className='absolute bottom-[100px] right-[-100px] flex items-center gap-1 rounded-[12px] border-2 border-white bg-[#f7f7f7] px-[6px] py-[2px]'>
-          <Configure height={24} />
-          <span className='text-black'>36</span>
+          <div className='absolute bottom-1 right-1 flex items-center gap-[4px] rounded-[12px] border-2 border-white bg-white px-[6px] py-[2px]'>
+            <Configure height={16} width={16} />
+            <span className='text-black'>36</span>
+          </div>
         </div>
       </div>
 

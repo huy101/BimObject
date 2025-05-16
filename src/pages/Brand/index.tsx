@@ -6,7 +6,7 @@ import { Container } from '../../components/@core/container';
 import Footer from '../../layout/Footer/index';
 import Navbar from '../../layout/Navbar';
 
-import { TrendingProductsSection } from '@/sections/TrendingProduct';
+import { TrendingProductsSection } from '@/sections/SuggestsProductSection';
 import { BreadcrumbDemo } from '@/components/@core/Breadcumb';
 import { FollowButton } from '@/components/@core/FollowButton';
 const BrandDetail = () => {
