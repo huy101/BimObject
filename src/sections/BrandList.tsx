@@ -1,7 +1,7 @@
-import { Section } from '../layout/section';
-import { Container } from '../layout/container';
-import { TitleSection } from '../components/ui/TitleSectionProps';
-import { BrandCard } from '../components/ui/BrandCard';
+import { Section } from '../components/@core/section';
+import { Container } from '../components/@core/container';
+import { TitleSection } from '../components/@core/TitleSectionProps';
+import { BrandCard } from '../components/@core/BrandCard';
 import { ArrowRightIcon } from '../components/ui/Svg';
 
 interface BrandCardProps {

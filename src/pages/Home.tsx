@@ -8,7 +8,7 @@ import HeroSection from '../sections/HeroSection';
 import PopularCategoriesSection from '../sections/PopularCategoriesSection';
 import { TrendingProductsSection } from '../sections/TrendingProduct';
 import { Button } from '@/components/ui/Button';
-import { Card } from '@/components/ui/card';
+import { Card } from '@/components/ui/Card/card';
 import { Download, FolderPlus, Package } from 'lucide-react';
 export default function Home() {
   const sampleCards = [

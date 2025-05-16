@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/Button';
-import { Input } from '@/components/ui/input';
+import { Input } from '@/components/ui/Input/input';
 import { Eye, EyeOff } from 'lucide-react';
 import { Image } from '@/components/ui/Image';
 export default function LoginPage() {

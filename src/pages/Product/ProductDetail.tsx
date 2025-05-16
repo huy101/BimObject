@@ -1,12 +1,12 @@
 import { ProductSpecification } from '@/components/@core/ProductSpecification/ProductSpecification';
 import ProductCarousel, { type ProductImage } from '@/components/ImageCarousel';
-import { Section } from '@/layout/section';
+import { Section } from '@/components/@core/section';
 import Footer from '@/layout/Footer';
 import Navbar from '@/layout/Navbar';
-import { Container } from '@/layout/container';
+import { Container } from '@/components/@core/container';
 import { BreadcrumbDemo } from '@/components/@core/Breadcumb';
-import { TitleSection } from '@/components/ui/TitleSectionProps';
-import ActionButtons from '@/components/ui/DownloadAddButton';
+import { TitleSection } from '@/components/@core/TitleSectionProps';
+import ActionButtons from '@/components/@core/DownloadAddButton';
 import { TrendingProductsSection } from '@/sections/TrendingProduct';
 import { FollowButton } from '@/components/@core/FollowButton';
 

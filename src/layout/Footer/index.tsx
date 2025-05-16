@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { SocialLinks } from '../../components/ui/SocialLink';
-import { Container } from '../container';
+import { SocialLinks } from '../../components/@core/SocialLink';
+import { Container } from '../../components/@core/container';
 import { BIMobject, BIMobjectWhite, ChevronDown } from '../../components/ui/Svg';
 import { LanguageDropdown } from '@/components/@core/LanguageDropdown';
 function Footer() {

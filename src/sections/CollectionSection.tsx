@@ -1,8 +1,8 @@
-import { CollectionCard } from '../components/ui/Colection';
+import { CollectionCard } from '../components/@core/Colection';
 import { ArrowRightIcon, Collections } from '../components/ui/Svg';
-import { TitleSection } from '../components/ui/TitleSectionProps';
-import { Container } from '../layout/container';
-import { Section } from '../layout/section';
+import { TitleSection } from '../components/@core/TitleSectionProps';
+import { Container } from '../components/@core/container';
+import { Section } from '../components/@core/section';
 
 interface Collection {
   title: string;

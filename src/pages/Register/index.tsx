@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/Button';
-import { Input } from '@/components/ui/input';
-import { Checkbox } from '@/components/ui/checkbox';
+import { Input } from '@/components/ui/Input/input';
+import { Checkbox } from '@/components/ui/Checkbox/checkbox';
 import { Eye, EyeOff } from 'lucide-react';
 import { Link } from 'react-router-dom';
 export default function SignupPage() {

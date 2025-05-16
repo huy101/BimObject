@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { Image } from '../../components/ui/Image';
-import { SocialLinks } from '../../components/ui/SocialLink';
+import { SocialLinks } from '../../components/@core/SocialLink';
 import { ArrowRightIcon, Union } from '../../components/ui/Svg';
-import { Container } from '../../layout/container';
+import { Container } from '../../components/@core/container';
 import Footer from '../../layout/Footer/index';
 import Navbar from '../../layout/Navbar';
 

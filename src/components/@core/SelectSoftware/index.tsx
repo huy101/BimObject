@@ -4,9 +4,9 @@ import type React from 'react';
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
-import { Label } from '@/components/ui/label';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Switch } from '@/components/ui/switch';
+import { Label } from '@/components/ui/Label/label';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/Popover/popover';
+import { Switch } from '@/components/ui/Switch/switch';
 
 type Software = {
   id: string;

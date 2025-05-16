@@ -1,9 +1,9 @@
 // components/sections/PopularCategoriesSection.jsx
 import MultipleItems from '../components/ui/slide'; // Giả sử bạn đã có một component MultipleItems
 import { ArrowRightIcon, Category } from '../components/ui/Svg';
-import { TitleSection } from '../components/ui/TitleSectionProps';
-import { Container } from '../layout/container';
-import { Section } from '../layout/section';
+import { TitleSection } from '../components/@core/TitleSectionProps';
+import { Container } from '../components/@core/container';
+import { Section } from '../components/@core/section';
 
 export default function PopularCategoriesSection() {
   return (

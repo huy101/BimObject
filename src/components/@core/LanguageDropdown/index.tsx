@@ -9,7 +9,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuCheckboxItem,
-} from '@/components/ui/dropdown-menu';
+} from '@/components/ui/DropdownMenu/dropdown-menu';
 import { Button } from '@/components/ui/Button';
 import { Globe, ChevronDown } from '@/components/ui/Svg';
 export type Checked = DropdownMenuCheckboxItemProps['checked'];

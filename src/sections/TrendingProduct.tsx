@@ -1,9 +1,9 @@
 import React from 'react';
-import { Section } from '../layout/section';
-import { Container } from '../layout/container';
-import { TitleSection } from '../components/ui/TitleSectionProps';
-import { ProductCard } from '../components/ui/ProductCard';
-import type { ProductCardProps } from '../components/ui/ProductCard';
+import { Section } from '../components/@core/section';
+import { Container } from '../components/@core/container';
+import { TitleSection } from '../components/@core/TitleSectionProps';
+import { ProductCard } from '../components/@core/ProductCard';
+import type { ProductCardProps } from '../components/@core/ProductCard';
 import { ArrowRightIcon } from '../components/ui/Svg';
 
 interface TrendingProductsSectionProps {

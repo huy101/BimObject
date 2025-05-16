@@ -1,12 +1,13 @@
 import { Button } from '../../components/ui/Button/index';
 import { Link } from 'react-router-dom';
-import { MenuMobile } from '../../components/ui/MenuMoblie';
+import { MenuMobile } from '../../components/@core/MenuMoblie';
 import { BIMobject, BIMobjectMobile, ChevronDown, Magnifying } from '../../components/ui/Svg';
 import React, { useState } from 'react';
 import { LanguageDropdown } from '@/components/@core/LanguageDropdown';
-import { DropdownMenuDemo } from '@/components/@core/DropdownMenuDemo';
+import { DropdownMenuUser } from '@/components/@core/DropdownMenuUser';
 import { SelectSoftware } from '@/components/@core/SelectSoftware';
-import { Command, CommandInput } from '@/components/ui/command';
+import { Command, CommandInput } from '@/components/ui/Command/command';
+import { DropdownMenuSearchBar } from '@/components/@core/DropdownMenuSearchBar';
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -71,7 +72,7 @@ function Navbar() {
           <div className='bar last'></div>
         </div> */}
           <div className='flex items-center'>
-            <DropdownMenuDemo />
+            <DropdownMenuUser />
             <div onClick={toggleMenu} className='bar-toggle-container'>
               <div className={`bar-toggle-line ${isOpen ? 'bar-rotate-top' : ''}`} />
               <div className={`bar-toggle-line ${isOpen ? 'bar-rotate-bottom' : ''}`} />

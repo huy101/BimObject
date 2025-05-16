@@ -1,12 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Card, CardContent } from '@/components/ui/card';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/Carousel/carousel';
+import { Card, CardContent } from '@/components/ui/Card/card';
 import { Button } from '@/components/ui/Button';
 import { ChevronLeft, ChevronRight, Maximize } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import type { CarouselApi } from '@/components/ui/carousel';
+import type { CarouselApi } from '@/components/ui/Carousel/carousel';
 
 export interface ProductImage {
   src: string;

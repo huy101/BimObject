@@ -1,8 +1,8 @@
 // components/sections/AdditionalContentSection.jsx
 import { Image } from '../components/ui/Image';
-import { TitleSection } from '../components/ui/TitleSectionProps';
-import { Container } from '../layout/container';
-import { Section } from '../layout/section';
+import { TitleSection } from '../components/@core/TitleSectionProps';
+import { Container } from '../components/@core/container';
+import { Section } from '../components/@core/section';
 export default function AdditionalContentSection() {
   return (
     <Section background='Beige'>
